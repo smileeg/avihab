@@ -10,14 +10,16 @@ function App() {
   const { state } = useApp();
 
   return (
-    <>
+    <div className="app-frame">
+      <div className="app-shell">
       {state.currentScreen === 'home' && <HomeScreen />}
       {state.currentScreen === 'add-habit' && <AddEditHabitScreen />}
       {state.currentScreen === 'edit-habit' && <AddEditHabitScreen />}
       {state.currentScreen === 'habit-detail' && <HabitDetailScreen />}
       {state.currentScreen === 'stats' && <StatsScreen />}
       {state.currentScreen === 'rewards' && <RewardsScreen />}
-    </>
+        </div>
+    </div>
   );
 }
 

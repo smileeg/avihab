@@ -60,7 +60,7 @@ export const HomeScreen = () => {
               >
                 <div className="habit-content" onClick={() => navigateTo('habit-detail', habit.id)}>
                   <div className="habit-icon" style={{ backgroundColor: habit.color }}>
-                    {habit.icon}
+                    <img src={habit.icon} alt={habit.name} className="habit-icon-img" />
                   </div>
                   <div className="habit-info">
                     <h3 className="habit-name">{habit.name}</h3>
@@ -85,7 +85,7 @@ export const HomeScreen = () => {
       )}
 
       <button className="fab" onClick={() => navigateTo('add-habit')}>
-        +
+        
       </button>
 
       <nav className="bottom-nav">

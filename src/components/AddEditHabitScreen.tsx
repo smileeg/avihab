@@ -10,7 +10,7 @@ export const AddEditHabitScreen = () => {
     : null;
 
   const [name, setName] = useState(habit?.name || '');
-  const [selectedIcon, setSelectedIcon] = useState(habit?.icon || habitIcons[0].emoji);
+  const [selectedIcon, setSelectedIcon] = useState(habit?.icon || habitIcons[0].icon);
   const [selectedColor, setSelectedColor] = useState(habit?.color || pastelColors[0]);
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const AddEditHabitScreen = () => {
             className="form-input"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Наприклад: Ранкова молитва"
+            placeholder="Наприклад: Ранкова кавуся 🍵"
             maxLength={50}
           />
         </div>
@@ -67,13 +67,13 @@ export const AddEditHabitScreen = () => {
           <div className="icon-grid">
             {habitIcons.map((icon) => (
               <button
-                key={icon.emoji}
+                key={icon.icon}
                 type="button"
-                className={`icon-option ${selectedIcon === icon.emoji ? 'selected' : ''}`}
-                onClick={() => setSelectedIcon(icon.emoji)}
+                className={`icon-option ${selectedIcon === icon.icon ? 'selected' : ''}`}
+                onClick={() => setSelectedIcon(icon.icon)}
                 title={icon.name}
               >
-                {icon.emoji}
+                <img src={icon.icon} alt={icon.name} className="habit-icon-img" />
               </button>
             ))}
           </div>

@@ -49,7 +49,7 @@ export const HabitDetailScreen = () => {
       <div className="habit-detail-card" style={{ borderColor: habit.color }}>
         <div className="habit-detail-header">
           <div className="habit-icon-large" style={{ backgroundColor: habit.color }}>
-            {habit.icon}
+            <img src={habit.icon} alt={habit.name} className="habit-icon-img" />
           </div>
           <h2 className="habit-detail-name">{habit.name}</h2>
         </div>
