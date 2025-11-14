@@ -1,0 +1,31 @@
+export const habitIcons = [
+  { emoji: '🙏', name: 'Молитва' },
+  { emoji: '📚', name: 'Читання' },
+  { emoji: '🌍', name: 'Duolingo' },
+  { emoji: '💧', name: 'Вода' },
+  { emoji: '🏃', name: 'Спорт' },
+  { emoji: '🧘', name: 'Медитація' },
+  { emoji: '🎨', name: 'Творчість' },
+  { emoji: '💪', name: 'Тренування' },
+  { emoji: '🥗', name: 'Здорове харчування' },
+  { emoji: '😴', name: 'Сон' },
+  { emoji: '✍️', name: 'Щоденник' },
+  { emoji: '🎯', name: 'Ціль' },
+  { emoji: '🌱', name: 'Саморозвиток' },
+  { emoji: '🎵', name: 'Музика' },
+  { emoji: '🧠', name: 'Навчання' },
+  { emoji: '☀️', name: 'Ранкова рутина' },
+];
+
+export const pastelColors = [
+  '#FFB3BA',
+  '#FFDFBA',
+  '#FFFFBA',
+  '#BAFFC9',
+  '#BAE1FF',
+  '#E0BBE4',
+  '#FFDFD3',
+  '#D4F1F4',
+  '#FFE5B4',
+  '#E8D5C4',
+];
